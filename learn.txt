@@ -1,0 +1,9 @@
+Vertical select and edit
+========================
+* CTRL-v visual block select mode
+* 'x' to cut the test
+* esc to get out of visual mode // not sure if this is verymuch required
+* CTRL-v again visual block mode, use arrow keys
+* SHIFT + i to get into visual mode
+* replace text
+* esc
