@@ -7,3 +7,13 @@ Vertical select and edit
 * SHIFT + i to get into visual mode
 * replace text
 * esc
+
+Setting up colors to work with putty sessions from Windows
+==========================================================
+download and edit this registery https://github.com/altercation/solarized/blob/master/putty-colors-solarized/solarized_dark.reg
+
+Language Server Coc plugin
+==========================
+:CocInstall coc-rls                       // rust
+go get golang.org/x/tools/gopls           // go
+

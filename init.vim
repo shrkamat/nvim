@@ -12,10 +12,10 @@ Plug 'fatih/vim-go'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" Plug 'zchee/deoplete-go'
 Plug 'chase/vim-ansible-yaml'
 Plug 'Rip-Rip/clang_complete'
 Plug 'plytophogy/vim-virtualenv'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Initialize plugin system
 call plug#end()
@@ -42,3 +42,6 @@ inoremap <C-A> <Home>
 inoremap <C-E> <End>
 inoremap <C-Home> <Home>
 inoremap <C-End> <End>
+
+" autocmd FileType json syntax match Comment +\/\/.\+$+
+autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
