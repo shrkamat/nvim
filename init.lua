@@ -17,3 +17,5 @@ vim.g.glow_binary_path="c:\\Neovim\\bin"
 
 -- simple setup(s) that won't have any customizations
 require("gitsigns").setup()
+require("nvim-autopairs").setup()
+require("Comment").setup()

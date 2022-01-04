@@ -68,6 +68,9 @@ return packer.startup(function(use)
      use "nvim-telescope/telescope.nvim"
      use "ryanoasis/vim-devicons"
 
+     use "windwp/nvim-autopairs"
+     use "numToStr/Comment.nvim"
+
      -- git
      use "lewis6991/gitsigns.nvim"
 
