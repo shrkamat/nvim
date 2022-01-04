@@ -13,7 +13,9 @@ vim.cmd "set nu"
 vim.cmd "set cursorline"
 vim.cmd "set encoding=UTF-8"
 vim.cmd "set nocompatible"
-vim.g.glow_binary_path="c:\\Neovim\\bin"
+if vim.loop.os_uname().sysname == "Windows_NT" then
+  vim.g.glow_binary_path="c:\\Neovim\\bin"
+end
 
 -- simple setup(s) that won't have any customizations
 require("gitsigns").setup()

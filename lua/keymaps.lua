@@ -81,3 +81,6 @@ keymap("n", "<leader>gg", ":Telescope grep_string <CR>", opts)
 keymap("n", "<F9>", ":Telescope live_grep <CR>", opts)
 keymap("n", "<leader>d", ":Telescope diagnostics bufnr=0 <CR>", opts)
 keymap("n", "<leader>D", ":Telescope diagnostics <CR>", opts)
+
+-- startify
+vim.g.startify_change_to_vcs_root=1

@@ -79,6 +79,7 @@ return packer.startup(function(use)
 
      -- Markdown previewer
      use "ellisonleao/glow.nvim"
+     use "mhinz/vim-startify"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

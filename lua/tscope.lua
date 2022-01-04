@@ -18,6 +18,9 @@ telescope.setup {
       height = 0.90,
       width = 0.96
     },
+    preview = {
+      timeout = 5000,
+    },
     sorting_strategy = "ascending",
 
     mappings = {
