@@ -63,6 +63,7 @@ return packer.startup(function(use)
      -- LSP
      use "neovim/nvim-lspconfig" -- enable LSP
      use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+     use {"nvim-treesitter/nvim-treesitter", run = "TSUpdate" }
 
      -- Telescope
      use "nvim-telescope/telescope.nvim"
@@ -80,6 +81,10 @@ return packer.startup(function(use)
      -- Markdown previewer
      use "ellisonleao/glow.nvim"
      use "mhinz/vim-startify"
+
+     -- build tools
+     use "mfussenegger/nvim-dap"
+     use "Shatur/neovim-cmake"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

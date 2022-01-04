@@ -21,3 +21,4 @@ end
 require("gitsigns").setup()
 require("nvim-autopairs").setup()
 require("Comment").setup()
+require("cmake")
