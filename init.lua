@@ -13,6 +13,7 @@ vim.cmd "set nu"
 vim.cmd "set cursorline"
 vim.cmd "set encoding=UTF-8"
 vim.cmd "set nocompatible"
+vim.g.glow_binary_path="c:\\Neovim\\bin"
 
 -- simple setup(s) that won't have any customizations
 require("gitsigns").setup()
