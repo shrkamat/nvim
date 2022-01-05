@@ -26,7 +26,8 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 keymap("n", "<leader>e", ":Lex 30<cr>", opts)
-keymap("n", "<C-A>", "ggVG", opts)
+keymap("n", "<C-A>", "ggVG", opts)              -- select all
+keymap("n", "U", "<C-R>", opts)                 -- redo, this feels a bit more natural
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
@@ -84,3 +85,14 @@ keymap("n", "<leader>D", ":Telescope diagnostics <CR>", opts)
 
 -- startify
 vim.g.startify_change_to_vcs_root=1
+
+-- cmake build and execute
+-- TODO should move this to ftplugin (cpp/c) projects
+keymap("n", "<C-R>", ":wa <CR> :CMake build_and_run <CR>", opts)
+keymap("i", "<C-R>", "<ESC> :wa <CR> :CMake build_and_run <CR>", opts)
+keymap("v", "<C-R>", "<ESC> :wa <CR> :CMake build_and_run <CR>", opts)
+
+-- save
+keymap("n", "<C-S>", ":update <CR>", opts)
+keymap("v", "<C-S>", "<ESC> :update <CR>", opts)
+keymap("i", "<C-S>", "<ESC> :update <CR>", opts)
