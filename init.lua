@@ -8,8 +8,8 @@ require("keymaps")    -- maintain this last ?
 
 vim.cmd "colorscheme gruvbox-material"
 vim.cmd "highlight HighlightedyankRegion cterm=reverse gui=reverse"       -- updated highlightedyank color
-vim.cmd "set rnu"
-vim.cmd "set nu"
+-- vim.cmd "set rnu"
+-- vim.cmd "set nu"
 vim.cmd "set cursorline"
 vim.cmd "set encoding=UTF-8"
 vim.cmd "set nocompatible"
@@ -22,3 +22,4 @@ require("gitsigns").setup()
 require("nvim-autopairs").setup()
 require("Comment").setup()
 require("cmake")
+require("bufferline").setup{}

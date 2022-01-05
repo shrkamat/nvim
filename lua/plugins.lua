@@ -67,7 +67,7 @@ return packer.startup(function(use)
 
      -- Telescope
      use "nvim-telescope/telescope.nvim"
-     use "ryanoasis/vim-devicons"
+     use "kyazdani42/nvim-web-devicons"
 
      use "windwp/nvim-autopairs"
      use "numToStr/Comment.nvim"
@@ -85,6 +85,9 @@ return packer.startup(function(use)
      -- build tools
      use "mfussenegger/nvim-dap"
      use "Shatur/neovim-cmake"
+
+     -- bufferline
+     use "akinsho/bufferline.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
