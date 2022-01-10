@@ -90,7 +90,14 @@ return packer.startup(function(use)
      use "akinsho/bufferline.nvim"
 
      -- terminal handling
-     use {"akinsho/toggleterm.nvim"}
+     use "akinsho/toggleterm.nvim"
+
+     -- pomodoro
+     use 'nvim-lualine/lualine.nvim'
+     use {
+         'wthollingsworth/pomodoro.nvim',
+         requires = 'MunifTanjim/nui.nvim',
+     }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

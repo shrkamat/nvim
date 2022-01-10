@@ -4,6 +4,7 @@ require("completion")
 require("lsp")
 require("tscope")
 require("config.toggleterm")
+require("config.pomodoro")
 require("keymaps")    -- maintain this last ?
 
 
