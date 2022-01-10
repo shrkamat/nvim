@@ -99,6 +99,11 @@ return packer.startup(function(use)
          requires = 'MunifTanjim/nui.nvim',
      }
 
+     -- plantuml
+     use 'aklt/plantuml-syntax'
+     use 'tyru/open-browser.vim'
+     use 'weirongxu/plantuml-previewer.vim'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
