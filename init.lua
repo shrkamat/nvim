@@ -5,6 +5,7 @@ require("lsp")
 require("tscope")
 require("config.toggleterm")
 require("config.pomodoro")
+require("config.neorg")
 require("keymaps")    -- maintain this last ?
 
 
@@ -23,3 +24,10 @@ require("nvim-autopairs").setup()
 require("Comment").setup()
 require("cmake")
 require("bufferline").setup{}
+require("nvim-treesitter.configs").setup{
+   ensure_installed = { "norg", "norg_meta", "norg_table", "rust", "cpp", "c", "javascript", "markdown" }, 
+   highlight = {
+       enable = true
+   }
+}
+

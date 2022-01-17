@@ -63,7 +63,7 @@ return packer.startup(function(use)
      -- LSP
      use "neovim/nvim-lspconfig" -- enable LSP
      use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-     use {"nvim-treesitter/nvim-treesitter", run = "TSUpdate" }
+     use {"nvim-treesitter/nvim-treesitter"}
 
      -- Telescope
      use "nvim-telescope/telescope.nvim"
@@ -103,6 +103,9 @@ return packer.startup(function(use)
      use 'aklt/plantuml-syntax'
      use 'tyru/open-browser.vim'
      use 'weirongxu/plantuml-previewer.vim'
+
+     -- orgmode
+     use 'nvim-neorg/neorg'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
