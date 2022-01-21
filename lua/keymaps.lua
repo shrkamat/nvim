@@ -106,3 +106,6 @@ keymap("n", "<leader>f", ":lua vim.lsp.buf.formatting()<CR>", opts)
 -- https://stackoverflow.com/questions/5559029/quickly-switching-buffers-in-vim-normal-mode
 keymap("n", "<tab>", ":if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>", opts)
 keymap("n", "<S-tab>", ":if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>", opts)
+
+-- word Navigate
+keymap("n", "b", "W", opts)
