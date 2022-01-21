@@ -23,3 +23,17 @@ require("nvim-autopairs").setup()
 require("Comment").setup()
 require("cmake")
 require("bufferline").setup{}
+
+-- local capabilities = vim.lsp.protocol.make_client_capabilities()
+-- capabilities.offsetEncoding = { "utf-16" }
+-- require("lspconfig").clangd.setup({ capabilities = capabilities })
+
+local null_ls = require("null-ls")
+local formatting = null_ls.builtins.formatting
+null_ls.setup {
+  debug = true,
+  sources = {
+    formatting.clang_format,
+    formatting.cmake_format,
+  },
+}

@@ -74,6 +74,7 @@ keymap("n", "<F8>", ":Telescope lsp_workspace_symbols <CR>", opts)
 keymap("n", "", ":Telescope lsp_references <CR>", opts)
 keymap("n", "=", ":Telescope lsp_definitions <CR>", opts)
 keymap("n", "-", "<C-o>", opts)
+keymap("n", "_", "<C-i>", opts)
 
 keymap("n", "<leader>oo", ":Telescope find_files <CR>", opts)
 keymap("n", "<leader>ls", ":Telescope buffers <CR>", opts)
@@ -96,3 +97,12 @@ keymap("v", "<C-R>", "<ESC> :wa <CR> :CMake build_and_run <CR>", opts)
 keymap("n", "<C-S>", ":update <CR>", opts)
 keymap("v", "<C-S>", "<ESC> :update <CR>", opts)
 keymap("i", "<C-S>", "<ESC> :update <CR>", opts)
+
+-- search
+keymap("n", "G", ":BrowserSearch<CR>", opts)
+keymap("v", "G", ":BrowserSearch<CR>", opts)
+keymap("n", "<leader>f", ":lua vim.lsp.buf.formatting()<CR>", opts)
+
+-- https://stackoverflow.com/questions/5559029/quickly-switching-buffers-in-vim-normal-mode
+keymap("n", "<tab>", ":if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>", opts)
+keymap("n", "<S-tab>", ":if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>", opts)

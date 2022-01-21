@@ -72,6 +72,9 @@ return packer.startup(function(use)
      use "windwp/nvim-autopairs"
      use "numToStr/Comment.nvim"
 
+     -- Static analysis
+     use 'jose-elias-alvarez/null-ls.nvim'
+
      -- git
      use "lewis6991/gitsigns.nvim"
 
@@ -106,6 +109,9 @@ return packer.startup(function(use)
 
      -- terraform
      use 'hashivim/vim-terraform'
+
+     -- search
+     use 'voldikss/vim-browser-search'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
