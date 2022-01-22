@@ -86,6 +86,7 @@ return packer.startup(function(use)
      use "mhinz/vim-startify"
 
      -- build tools
+     use 'stevearc/dressing.nvim'
      use "mfussenegger/nvim-dap"
      use "Shatur/neovim-cmake"
 
