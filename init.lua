@@ -17,7 +17,7 @@ if vim.loop.os_uname().sysname == "Windows_NT" then
 end
 
 -- simple setup(s) that won't have any customizations
-require("gitsigns").setup()
+require("config.gitsigns")
 require("nvim-autopairs").setup()
 require("Comment").setup()
 
