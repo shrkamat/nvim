@@ -87,12 +87,6 @@ keymap("n", "<leader>D", ":Telescope diagnostics <CR>", opts)
 -- startify
 vim.g.startify_change_to_vcs_root=1
 
--- cmake build and execute
--- TODO should move this to ftplugin (cpp/c) projects
-keymap("n", "<C-R>", ":wa <CR> :CMake build_and_run <CR>", opts)
-keymap("i", "<C-R>", "<ESC> :wa <CR> :CMake build_and_run <CR>", opts)
-keymap("v", "<C-R>", "<ESC> :wa <CR> :CMake build_and_run <CR>", opts)
-
 -- save
 keymap("n", "<C-S>", ":update <CR>", opts)
 keymap("v", "<C-S>", "<ESC> :update <CR>", opts)
