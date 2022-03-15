@@ -7,7 +7,6 @@
         "int main(int argc, const char** argv)",
         "{",
         "    std::cout << ${1:\"Hello,World\"} << std::endl;",
-        "    std::cout << ${0:\"Not getting this\"} << \"something more this time\" << std::endl;",
         "",
         "    return 0;",
         "}",

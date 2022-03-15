@@ -11,9 +11,7 @@ local r = ls.restore_node
 local events = require("luasnip.util.events")
 local ai = require("luasnip.nodes.absolute_indexer")
 
-local some = require("luasnip.loaders.from_vscode").lazy_load { paths = { "~/.config/nvim/snippets" } }
-
-print (some)
+require("luasnip.loaders.from_vscode").lazy_load { paths = { "~/.config/nvim/snippets" } }
 
 
 -- Repeat Insernode text
@@ -24,7 +22,7 @@ end
 
 ls.snippets = {
     cpp = {
-        s("sss",{
+        s("example",{
             i(1, '// insert node'),
             t({'', '// some other text on a new line', ''}),
             ri(1) --repeats inserted text after jump from insert node
