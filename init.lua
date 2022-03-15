@@ -12,6 +12,15 @@ vim.cmd "highlight HighlightedyankRegion cterm=reverse gui=reverse"       -- upd
 vim.cmd "set cursorline"
 vim.cmd "set encoding=UTF-8"
 vim.cmd "set nocompatible"
+
+-- set vimwiki configs
+if vim.loop.os_uname().sysname == "Windows_NT" then
+  vim.cmd [[ let g:vimwiki_list = [{'path': '~/Documents/Wiki/', 'syntax': 'markdown', 'ext': '.md'}] ]]
+else
+  vim.cmd [[ let g:vimwiki_list = [{'path': '~/Wiki/', 'syntax': 'markdown', 'ext': '.md'}] ]]
+end
+
+-- Glow binary for windows (placed in same dir as nvim)
 if vim.loop.os_uname().sysname == "Windows_NT" then
   vim.g.glow_binary_path="c:\\Neovim\\bin"
 end
@@ -36,3 +45,4 @@ null_ls.setup {
     formatting.cmake_format,
   },
 }
+

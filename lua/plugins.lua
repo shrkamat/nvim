@@ -114,6 +114,10 @@ return packer.startup(function(use)
      -- search
      use 'voldikss/vim-browser-search'
 
+     -- wiki
+     use 'vimwiki/vimwiki'
+     use 'ElPiloto/telescope-vimwiki.nvim'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
