@@ -5,6 +5,7 @@ require("lsp")
 require("tscope")
 require("config.toggleterm")
 require("config.pomodoro")
+require("config.luasnip")
 require("keymaps")    -- maintain this last ?
 
 vim.cmd "colorscheme gruvbox-material"
