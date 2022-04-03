@@ -65,6 +65,7 @@ return packer.startup(function(use)
      use "neovim/nvim-lspconfig" -- enable LSP
      use "williamboman/nvim-lsp-installer" -- simple to use language server installer
      use {"nvim-treesitter/nvim-treesitter", run = "TSUpdate" }
+     use {"simrat39/rust-tools.nvim"}
 
      -- Telescope
      use "nvim-telescope/telescope.nvim"
@@ -90,6 +91,7 @@ return packer.startup(function(use)
      use 'stevearc/dressing.nvim'
      use "mfussenegger/nvim-dap"
      use "Shatur/neovim-cmake"
+     use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
 
      -- bufferline
      use "akinsho/bufferline.nvim"
@@ -118,6 +120,18 @@ return packer.startup(function(use)
      -- wiki
      use 'vimwiki/vimwiki'
      use 'ElPiloto/telescope-vimwiki.nvim'
+
+     -- tree explorer
+     use 'kyazdani42/nvim-tree.lua'
+
+     -- profile
+     use 'dstein64/vim-startuptime'
+
+     -- easy align
+     use 'junegunn/vim-easy-align'
+
+     -- lazygit
+     use 'kdheepak/lazygit.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

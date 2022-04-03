@@ -84,6 +84,7 @@ keymap("v", "<leader>gg", ":Telescope grep_string <CR>", opts)
 keymap("n", "<F9>", ":Telescope live_grep <CR>", opts)
 keymap("n", "<leader>d", ":Telescope diagnostics bufnr=0 <CR>", opts)
 keymap("n", "<leader>D", ":Telescope diagnostics <CR>", opts)
+keymap("n", "<leader>e", ":NvimTreeToggle <CR>", opts)
 
 keymap("n", "<leader>ws", ":Telescope vimwiki vimwiki<CR>", opts)
 keymap("n", "<leader>wg", ":Telescope vimwiki live_grep<CR>", opts)
@@ -99,7 +100,7 @@ keymap("i", "<C-S>", "<ESC> :update <CR>", opts)
 -- search
 keymap("n", "<leader>gx", ":BrowserSearch<CR>", opts)
 keymap("v", "<leader>gx", ":BrowserSearch<CR>", opts)
-keymap("n", "<leader>f", ":lua vim.lsp.buf.formatting()<CR>", opts)
+keymap("n", "<leader>f", ":lua vim.lsp.buf.format()<CR>", opts)
 
 -- https://stackoverflow.com/questions/5559029/quickly-switching-buffers-in-vim-normal-mode
 keymap("n", "<tab>", ":if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>", opts)
@@ -114,4 +115,8 @@ keymap("i", "<C-v>", "<C-r>*", opts)
 keymap("v", "<C-c>", "mxy`x", opts)
 keymap("i", "<C-z>", "<Esc>:normal u<CR>i", opts)
 keymap("n", "<C-z>", "u", opts)
+-- keymap("n", "<leader>t", ":r! date \"+\\%y-\\%m-\\%d \\%H:\\%M:\\%S\" <CR> $a", opts)
+keymap("n", "<leader>t", ":r! date \"+\\%y\\%m\\%d \\%H:\\%M\" <CR> $a | ", opts)
 
+-- easyalign
+keymap('v', '<leader>aa', '<Plug>(EasyAlign) <CR>gv<Plug>(EasyAlign)=', opts)
