@@ -1,7 +1,7 @@
 local Path = require('plenary.path')
 
 require("cmake").setup({
-    parameters_file = 'neovim.json',
+    parameters_file = 'cmake.json',
     build_dir = tostring(Path:new('{cwd}', 'build')),
     -- samples_path = tostring(script_path:parent():parent():parent() / 'samples'),
     default_projects_path = tostring(Path:new(vim.loop.os_homedir(), 'Projects')),
