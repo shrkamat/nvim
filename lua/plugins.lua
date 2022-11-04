@@ -133,6 +133,9 @@ return packer.startup(function(use)
      -- lazygit
      use 'kdheepak/lazygit.nvim'
 
+     -- be good, learn vim
+     use 'ThePrimeagen/vim-be-good'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

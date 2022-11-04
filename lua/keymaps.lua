@@ -100,7 +100,7 @@ keymap("i", "<C-S>", "<ESC> :update <CR>", opts)
 -- search
 keymap("n", "<leader>gx", ":BrowserSearch<CR>", opts)
 keymap("v", "<leader>gx", ":BrowserSearch<CR>", opts)
-keymap("n", "<leader>f", ":lua vim.lsp.buf.format()<CR>", opts)
+keymap("n", "<leader>f", ":lua vim.lsp.buf.formatting_sync()<CR>", opts)
 
 -- https://stackoverflow.com/questions/5559029/quickly-switching-buffers-in-vim-normal-mode
 keymap("n", "<tab>", ":if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>", opts)
