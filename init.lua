@@ -6,6 +6,7 @@ require("config.telescope")
 require("config.toggleterm")
 require("config.pomodoro")
 require("config.luasnip")
+require("config.rust-tools")
 require("keymaps")    -- maintain this last ?
 
 vim.cmd "colorscheme gruvbox-material"
