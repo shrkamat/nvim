@@ -48,7 +48,11 @@ null_ls.setup {
     },
 }
 
-require 'nvim-tree'.setup {}
+require 'nvim-tree'.setup {
+    update_focused_file = {
+        enable = true
+    }
+}
 
 -- require("flutter-tools").setup{decorations = {
 --     outline = {
@@ -153,3 +157,6 @@ vim.api.nvim_create_user_command(
     ':Telescope find_files',
     {}
 )
+
+
+-- https://stackoverflow.com/questions/10767960/how-to-jump-to-the-end-of-pasted-content-after-paste
