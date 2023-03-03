@@ -8,6 +8,7 @@ telescope.load_extension('vimwiki')
 -- telescope.load_extension('cmake')
 telescope.load_extension('luasnip')
 telescope.load_extension('lazygit')
+telescope.load_extension("csearch")
 
 local actions = require "telescope.actions"
 
