@@ -121,3 +121,17 @@ require("flutter-tools").setup {
   }
 }
 
+local easypick = require("easypick")
+
+local base_branch = "master"
+
+-- feature is currently unusable
+easypick.setup({
+    pickers = {
+        {
+			name = "gdiff",
+			command = "git diff --name-only $(git merge-base HEAD " .. base_branch .. " )",
+			previewer = easypick.previewers.branch_diff({base_branch = base_branch})
+		},
+    }
+})
