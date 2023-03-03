@@ -78,7 +78,8 @@ return packer.startup(function(use)
     -- Telescope
     use "nvim-telescope/telescope.nvim"
     use { 'axkirillov/easypick.nvim', requires = 'nvim-telescope/telescope.nvim' }
-    use "kyazdani42/nvim-web-devicons"
+    use { "LinArcX/telescope-command-palette.nvim" }
+    -- use "kyazdani42/nvim-web-devicons"
 
     use "windwp/nvim-autopairs"
     use "numToStr/Comment.nvim"
