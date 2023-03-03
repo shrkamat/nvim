@@ -89,6 +89,8 @@ keymap("n", "<leader>e", ":NvimTreeToggle <CR>", opts)
 keymap("n", "<leader>ws", ":Telescope vimwiki vimwiki<CR>", opts)
 keymap("n", "<leader>wg", ":Telescope vimwiki live_grep<CR>", opts)
 
+keymap("n", "<leader>c", ":lua require('config.telescope').live_grep_nvim_configs()<CR>", opts)
+
 -- startify
 vim.g.startify_change_to_vcs_root=1
 

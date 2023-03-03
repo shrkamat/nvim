@@ -115,3 +115,16 @@ telescope.setup {
     -- please take a look at the readme of the extension you want to configure
   },
 }
+
+local M = {}
+
+function M.live_grep_nvim_configs()
+    local opts = {}
+    opts.search_dirs = {'~/.config/nvim'}
+    opts.prompt_prefix = ' -> '
+    opts.prompt_title = ' Search NeoVim Configs '
+    opts.shorten_path = true
+    return require('telescope.builtin').live_grep(opts)
+end
+
+return M
