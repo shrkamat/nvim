@@ -9,10 +9,20 @@ end
 
 local lsp = require('lsp-zero').preset({
     name = 'minimal',
-    set_lsp_keymaps = true,
+    set_lsp_keymaps = { omit = { '<F2>', '<F4>' } },
     manage_nvim_cmp = true,
     suggest_lsp_servers = true,
 })
+
+lsp.on_attach(function(client, bufnr)
+    local opts = { buffer = bufnr }
+    local bind = vim.keymap.set
+
+    bind('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
+    bind('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
+    -- more keybindings...
+end)
+
 
 vim.diagnostic.config({
     virtual_text = true,
